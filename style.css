@@ -1,0 +1,21 @@
+* {
+    background-color: white;
+}
+
+.footer-heading {
+    font-weight: 700;
+    font-size: 28;
+}
+
+.footer-heading-2 {
+    font-weight: 700;
+    font-size: 24;
+}
+
+.light-grey-text {
+    color: grey;
+}
+
+.lighter-grey-text {
+    color: #c0c0c0;
+}

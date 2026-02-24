@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style="background-color: whitesmoke;">
     <header class="navbar navbar-expand-lg shadow-sm">
         <div class="mx-4 flex-grow-1 d-flex justify-content-between">
             <div class="d-flex align-items-center">
@@ -21,26 +21,50 @@
         </div>
     </header>
 
-    <footer class="mt-auto">
+    <footer class="mt-auto p-3 shadow">
         <div class="container">
-            <div class="d-flex">
-                <div>
-                    <label><img src="images/div.size-8.png" alt=""> Каталог идей</label>
-                    <p>
+            <div class="row">
+                <div class="col-3">
+                    <label class="footer-heading mb-2"><img src="images/div.size-8.png" alt=""> Каталог идей</label>
+                    <p class="light-grey-text">
                         Платформа для улучшения городской среды.
                         Предлагайте идеи, голосуйте и меняйте мир вокруг
                         себя к лучшему.
                     </p>
                     <div class="d-flex"><img src="images/Component 6.png" alt=""><img src="images/Component 7.png" alt=""></div>
                 </div>
-                <div>
-                    
+                <div class="d-flex flex-column col-3">
+                    <label class="footer-heading-2 mb-2">Платформа</label>
+                    <div class="light-grey-text d-flex flex-column justify-content-evenly">
+                        <label>Все идеи</label>
+                        <label>Предложить проект</label>
+                        <label>Рейтинг</label>
+                        <label>Истории успеха</label>
+                    </div>
                 </div>
-                <div>
-
+                <div class="d-flex flex-column col-3">
+                    <label class="footer-heading-2 mb-2">Поддержка</label>
+                    <div class="light-grey-text d-flex flex-column justify-content-evenly">
+                        <label>Правила</label>
+                        <label>FAQ</label>
+                        <label>Связаться с админом</label>
+                        <label>Сообщить о проблеме</label>
+                    </div>
                 </div>
+                <div class="d-flex flex-column col-3">
+                    <label class="footer-heading-2 mb-2">Контакты</label>
+                    <div class="light-grey-text d-flex flex-column justify-content-evenly">
+                        <label><img src="images/Vector.svg" alt=""> Центральный офис</label>
+                        <label><img src="images/Vector (1).svg" alt=""> info@ideas-catalog.ru</label>
+                        <label><img src="images/Vector (2).svg" alt=""> +7 999 123-45-67</label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5 lighter-grey-text">
+                <label>© 2026 Каталог Идей. Все права защищены.</label>
                 <div>
-
+                    <label class="me-2">Политика конфиденциальности</label>
+                    <label>Условия использования</label>
                 </div>
             </div>
         </div>
