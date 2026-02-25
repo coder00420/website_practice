@@ -19,3 +19,17 @@
 .lighter-grey-text {
     color: #c0c0c0;
 }
+
+.footer-link:hover {
+    color: rgb(40, 216, 99);
+    transition: color 0.2s;
+}
+
+.add-project-button {
+    background-color: #13EC13;
+}
+
+.add-project-button:hover {
+    background-color: rgb(39, 58, 39);
+    transition: color 0.2s;
+}
