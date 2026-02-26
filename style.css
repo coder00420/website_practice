@@ -1,5 +1,18 @@
-* {
-    background-color: white;
+.social-media-buttons {
+    color: grey;
+}
+
+.social-media-buttons:hover {
+    color: rgb(40, 216, 99);
+    transition: color 0.2s;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: flex;
 }
 
 .footer-heading {
@@ -20,13 +33,18 @@
     color: #c0c0c0;
 }
 
+.footer-link {
+    text-decoration: none;
+    border: none;
+}
+
 .footer-link:hover {
     color: rgb(40, 216, 99);
     transition: color 0.2s;
 }
 
 .add-project-button {
-    background-color: #13EC13;
+    
 }
 
 .add-project-button:hover {
