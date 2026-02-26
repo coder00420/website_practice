@@ -35,11 +35,31 @@
                 <div class="h1">Новый проект</div>
                 <p class="light-grey-text">Заполните форму ниже, чтобы предложить свою идею по благоустройству территории.</p>
             </div>
-            <div class="flex-column bg-white shadow-sm m-4 flex-grow-1" style="border-radius: 10px;">
-                <div class="m-4">
+            <div class="flex-column bg-white shadow-sm m-4 p-4 flex-grow-1" style="border-radius: 10px;">
+                <div>
                     <div>
-                        <label class="mb-2" for="image-url">Ссылка на изображение проекта</label>
-                        <input type="text" class="form-control">
+                        <label class="form-label" for="image-url">Ссылка на изображение проекта</label>
+                        <input type="text" class="form-control" placeholder="Вставьте прямую ссылку на картинку (URL)">
+                    </div>
+                    <div class="mt-4">
+                        <label class="form-label" for="project-name">Назвние проекта</label>
+                        <input class="form-control" type="text" placeholder="Например: Сквер на улице Ленина">
+                    </div>
+                </div>
+                <div class="d-flex mt-4 row">
+                    <div class="col-6">
+                        <label for="author" class="form-label">Автор</label>
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="col-6">
+                        <label for="state">Статус</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary bropdown-toggle">Выберите статус</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Идея</a></li>
+                                <li><a href="#" class="dropdown-item">Одобрено</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
