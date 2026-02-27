@@ -52,6 +52,15 @@
     transition: color 0.3s;
 }
 
+#create-project-button {
+    background-color: rgb(19, 236, 19);
+}
+
+#create-project-button:hover {
+    background-color: rgba(19, 236, 19, 0.521);
+    transition: color 0.3s;
+}
+
 .btn.active-category {
     color: white;
 }
