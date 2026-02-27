@@ -14,23 +14,23 @@
     <header class="navbar navbar-expand-lg shadow-sm bg-white">
         <div class="mx-4 flex-grow-1 d-flex justify-content-between">
             <div class="d-flex align-items-center">
-                <a href="" class="navbar-brand" style="color: rgb(23, 168, 23); font-weight: bold;"><img src="images/div.size-8.png" alt="" class="me-3">Каталог идей</a>
-                <a href="#" style="font-weight: 500;" class="nav-link ms-3">Главная</a>
+                <a href="javascript:void(0)" onclick="SetPage('main-page')" class="navbar-brand" style="color: rgb(23, 168, 23); font-weight: bold;"><img src="images/div.size-8.png" alt="" class="me-3">Каталог идей</a>
+                <a href="javascript:void(0)" onclick="SetPage('main-page')" style="font-weight: 500;" class="nav-link ms-3">Главная</a>
             </div>
-        <a class="btn d-flex align-items-center add-project-button" style="background-color: #13EC13; color: black; font-size: 14px; line-height: 20px; font-weight: 700;">+ Добавить проект</a>
+        <a href="javascript:void(0)" onclick="SetPage('secondary-page')" id="add-project-button" class="btn d-flex align-items-center" style="color: black; font-size: 14px; line-height: 20px; font-weight: 700;">+ Добавить проект</a>
         </div>
     </header>
 
     <div class="d-flex flex-grow-1">
-        <div class="container flex-grow-1 page">
+        <div id="main-page" class="container flex-grow-1 page active">
             <div class="mt-3">
-                <button class="btn bg-black" style="color: white;">Все идеи</button>
-                <button class="btn shadow-sm"><img src="images/circle-1.png" alt=""> Одобрено</button>
-                <button class="btn shadow-sm"><img src="images/circle-2.png" alt=""> На рассмотрении</button>
-                <button class="btn shadow-sm"><img src="images/circle-3.png" alt=""> Новое</button>
+                <button id="category1" class="btn shadow-sm category active-category" onclick="SetCategory('category1')">Все идеи</button>
+                <button id="category2" class="btn shadow-sm category" onclick="SetCategory('category2')"><img src="images/circle-1.png" alt=""> Одобрено</button>
+                <button id="category3" class="btn shadow-sm category" onclick="SetCategory('category3')"><img src="images/circle-2.png" alt=""> На рассмотрении</button>
+                <button id='category4' class="btn shadow-sm category" onclick="SetCategory('category4')"><img src="images/circle-3.png" alt=""> Новое</button>
             </div>
         </div>
-        <div class="container flex-column flex-grow-1 page active" style="max-width: 920px;">
+        <div id="secondary-page" class="container flex-column flex-grow-1 page" style="max-width: 920px;">
             <div class="mt-4">
                 <div class="h1">Новый проект</div>
                 <p class="light-grey-text">Заполните форму ниже, чтобы предложить свою идею по благоустройству территории.</p>
@@ -54,7 +54,7 @@
                     <div class="col-6">
                         <label for="state">Статус</label>
                         <div class="dropdown">
-                            <button class="btn btn-outline-secondary bropdown-toggle">Выберите статус</button>
+                            <button class="btn d-grid bropdown-toggle">Выберите статус</button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" class="dropdown-item">Идея</a></li>
                                 <li><a href="#" class="dropdown-item">Одобрено</a></li>
@@ -122,5 +122,17 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        let SetCategory = function(categoryId) {
+            document.querySelectorAll(".category").forEach(c => c.classList.remove('active-category'));
+            document.getElementById(categoryId).classList.add('active-category');
+        }
+
+        let SetPage = function(pageId) {
+            document.querySelectorAll('.page').forEach(i => i.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
 </body>
 </html>

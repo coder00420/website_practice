@@ -43,11 +43,32 @@
     transition: color 0.2s;
 }
 
-.add-project-button {
-    
+#add-project-button {
+    background-color: rgb(19, 236, 19);
 }
 
-.add-project-button:hover {
-    background-color: rgb(39, 58, 39);
-    transition: color 0.2s;
+#add-project-button:hover {
+    background-color: rgba(19, 236, 19, 0.521);
+    transition: color 0.3s;
 }
+
+.btn.active-category {
+    color: white;
+}
+
+#category1.active-category.category {
+    background-color: black;
+}
+
+#category2.active-category.category {
+    background-color: rgb(106, 212, 106);
+}
+
+#category3.active-category.category {
+    background-color: rgb(104, 179, 250);
+}
+
+#category4.active-category.category {
+    background-color: rgb(245, 202, 122);
+}
+
