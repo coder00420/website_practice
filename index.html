@@ -22,12 +22,39 @@
     </header>
 
     <div class="d-flex flex-grow-1">
-        <div id="main-page" class="container flex-grow-1 page active">
-            <div class="mt-3">
+        <div id="main-page" class="container flex-grow-1 flex-column page active">
+            <div class="my-3">
                 <button id="category1" class="btn shadow-sm category active-category" onclick="SetCategory('category1')">Все идеи</button>
                 <button id="category2" class="btn shadow-sm category" onclick="SetCategory('category2')"><img src="images/circle-1.png" alt=""> Одобрено</button>
                 <button id="category3" class="btn shadow-sm category" onclick="SetCategory('category3')"><img src="images/circle-2.png" alt=""> На рассмотрении</button>
                 <button id='category4' class="btn shadow-sm category" onclick="SetCategory('category4')"><img src="images/circle-3.png" alt=""> Новое</button>
+            </div>
+            <div class="flex-grow-1">
+                <div class="card" style="width: 322px; height: 401px; border-radius: 12px;">
+                    <div style="height: 192px; overflow: hidden;">
+                        <img class="project-img" src="images/заглушка.jpg" alt="">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Пример проекта</h3>
+                        <p class="card-text flex-grow-1">Описание</p>
+                        <div class="d-flex justify-content-around py-3" style="border-top: 1px solid #dee2e6;">
+                            <div>
+                                <a href="#" class="me-1" style="text-decoration: none;">
+                                    <img src="images/profile-picture-example.png" alt="">
+                                </a>
+                                <a href="#" class="light-grey-text" style="text-decoration: none;">
+                                    Пример пользователя
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" style="text-decoration: none;" class="me-1">
+                                    <img src="images/like-button.svg" alt="">
+                                </a>
+                                <label id="likes-count">0</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="secondary-page" class="container flex-column flex-grow-1 page" style="max-width: 920px;">

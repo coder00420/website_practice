@@ -81,3 +81,6 @@
     background-color: rgb(245, 202, 122);
 }
 
+.project-img:hover {
+    transform: scale(1.2);
+}
